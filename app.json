@@ -1,0 +1,31 @@
+{
+    "name": "Telegram pip Search Bot",
+    "description": "This bot Search python packages Inline",
+    "repository": "https://github.com/Abhijith-cloud/TGInlineGIF",
+    "keywords": [
+        "telegram",
+        "Inline pip Search Bot",
+        "telegram bot",
+        "pip"
+    ],
+    "env":
+    {
+        "ENV": {
+            "description": "Set it to anything to enable configuration by environment variables.",
+            "value": "True"
+        },
+       "BOT_TOKEN": {
+        "description": "Your Bot token from @Botfather",
+        "value": ""
+      },
+      "WEBHOOK_URL":{
+      "description": "https://<YOUR APP NAME>.herokuapp.com/",
+      "value" : "https://<YOUR APP NAME>.herokuapp.com/"
+     }
+    },
+     "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
