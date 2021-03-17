@@ -12,6 +12,7 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(InlineQueryHandler(inlinequery))
     if Config.ENV:
+        logger.info(f"BOT START WITH WEBHOOK")
         updater.start_webhook(
             listen="0.0.0.0",
             port=Config.WEBHOOK_PORT,
