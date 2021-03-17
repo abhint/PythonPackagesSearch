@@ -1,2 +1,2 @@
 class Bot:
-    TOKEN = '1351501215:AAHzZiKSDAfKj2SbyI6Cd3op4X7wfY8---o'
+    TOKEN = ''
