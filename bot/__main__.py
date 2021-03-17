@@ -15,7 +15,7 @@ def main() -> None:
         updater.start_webhook(
             listen="0.0.0.0",
             port=Config.WEBHOOK_PORT,
-            url_path=Config.WEBHOOK_URL
+            url_path=Config.BOT_TOKEN
         )
         updater.bot.set_webhook(url=Config.WEBHOOK_URL + Config.BOT_TOKEN)
     else:
