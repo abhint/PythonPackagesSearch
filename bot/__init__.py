@@ -12,7 +12,7 @@ class Config:
         if ENV:
             BOT_TOKEN = os.environ.get("BOT_TOKEN")
             WEBHOOK_URL = os.environ.get("WEBHOOK_URL")
-            WEBHOOK_PORT = int(os.environ.get("PORT"))
+            WEBHOOK_PORT = int(os.environ.get("PORT", "1234"))
             logger.info(f"BOT START WITH WEBHOOK\nURL: {WEBHOOK_URL}\nPORT: {WEBHOOK_PORT}")
         else:
             from local_server import Bot
